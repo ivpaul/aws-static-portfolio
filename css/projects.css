@@ -1,0 +1,57 @@
+.projects-container {
+  width: 95%;
+  background-color: inherit;
+  margin: 10px;
+}
+
+.projects-container .title {
+  border-top: 1.5px solid rgb(240, 250, 250);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-item {
+  background-color: inherit;
+  padding: 0.1px;
+}
+
+.project-link:hover .project-item {
+  background-color: #2d3748;
+}
+
+.project-link:hover .project-item h2,
+.project-link:hover .project-item p,
+.project-link:hover .project-item .technologies {
+  color: #9f2b2b;
+}
+
+.project-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.project-item p {
+  font-size: 1rem;
+  color: rgb(240, 250, 250);
+  margin-bottom: 10px;
+  padding-left: 1rem;
+}
+
+.project-item .technologies {
+  font-size: 0.9rem;
+  color: #a0aec0;
+}

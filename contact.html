@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/images/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<!-- HEADER Bar -->
+<header>
+  <nav class="nav">
+    <a class="nav-logo" href="/">
+      <span>I</span><span>V</span><span>A</span><span>N</span> <span>P</span><span>A</span><span>U</span><span>L</span>
+    </a>
+      <div class="nav-links">
+          <a class="nav-link" href="/about.html">ABOUT</a>
+          <a class="nav-link" href="/projects.html">PROJECTS</a>
+          <a class="nav-link" href="/blog.html">BLOG</a>
+      </div>
+  </nav>
+</header>
+
+<body>
+  <div class="contact-container">
+    <h2 class="title">Contact</h2>
+    
+    <form id="contact-form">
+      <label for="name">→ Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">→ Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">→ Your Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+
+<!-- FOOTER Navigation Bar -->
+<footer>
+  <nav class="nav">
+      <a class="nav-active-link" href="/contact.html">CONTACT</a>
+      <a class="nav-link" href="https://www.linkedin.com/in/ivpaul/">LINKEDIN</a>
+      <a class="nav-link" href="https://www.github.com/ivpaul">GITHUB</a>
+  </nav>
+</footer>
+
+<!-- Javascript -->
+<!-- <script src="./js/scripts.js"></script> -->
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const nameField = document.getElementById("name");
+    const emailField = document.getElementById("email");
+    const messageField = document.getElementById("message");
+    const submitButton = this.querySelector("button[type='submit']");
+
+    const payload = {
+      name: nameField.value.trim(),
+      email: emailField.value.trim(),
+      message: messageField.value.trim()
+    };
+
+    // Disable button to prevent double clicks
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+
+    try {
+      const response = await fetch("https://opa7gdycleil2krlqdwh4nq6e40ziezl.lambda-url.us-east-1.on.aws/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        // Disable all form inputs
+        nameField.disabled = true;
+        emailField.disabled = true;
+        messageField.disabled = true;
+
+        submitButton.textContent = "Sent!";
+        submitButton.disabled = true;
+      } else {
+        // Allow user to try again
+        submitButton.textContent = "Send Message";
+        submitButton.disabled = false;
+        console.error("Server Error:", data.error || "Something went wrong");
+      }
+    } catch (err) {
+      // Allow user to try again
+      submitButton.textContent = "Send Message";
+      submitButton.disabled = false;
+      console.error("Network Error:", err.message);
+    }
+  });
+</script>
+
+</html>

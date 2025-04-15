@@ -1,0 +1,58 @@
+/* Contact Page Styles */
+.contact-container {
+    width: 95%;
+    margin: 10px;
+    background-color: inherit;
+  }
+  
+  .contact-container .title {
+    border-top: 1.5px solid rgb(240, 250, 250);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: white
+}
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 15px; /* Add spacing between form elements */
+  }
+  
+  form label {
+    font-weight: bold;
+    color: rgb(240, 250, 250); 
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form input,
+  form textarea {
+    background-color: #2d3748;
+    color: rgb(240, 250, 250); 
+  }
+  
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #a0aec0; 
+  }
+  
+  form button {
+    background-color: #9f2b2b; 
+    color: rgb(240, 250, 250);
+    /* cursor: pointer; */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #7f2b2b;
+    color: #f7fafc;
+  }

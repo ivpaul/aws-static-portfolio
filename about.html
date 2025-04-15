@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+
+<!-- HEADER Bar -->
+<header>
+    <nav class="nav">
+        <a class="nav-logo" href="/">
+            <span>I</span><span>V</span><span>A</span><span>N</span> <span>P</span><span>A</span><span>U</span><span>L</span>
+          </a>
+        <div class="nav-links">
+            <a class="nav-active-link" href="/about.html">ABOUT</a>
+            <a class="nav-link" href="/projects.html">PROJECTS</a>
+            <a class="nav-link" href="/blog.html">BLOG</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <!-- CURRENT Section -->
+    <div class="container">
+        <div class="container-title">CURRENT</div>
+        <div class="container-content">
+            <p onclick="highlightTemporary(this)">Systems Architect @ DoD (TS/SCI + Poly)</p>
+        </div>
+    </div>
+
+    <!-- SKILLS Section -->
+    <div class="container">
+        <div class="container-title">SKILLS</div>
+        <div class="container-content">
+            <ul>
+                <li onclick="highlightTemporary(this)"><span class="category">Programming</span>
+                    <span class="details">Python, Java, Javascript, C, Rust</span></li>
+                <li onclick="highlightTemporary(this)"><span class="category">Database</span>
+                    <span class="details">MySQL, PostgreSQL, DynamoDB</span></li>
+                <li onclick="highlightTemporary(this)"><span class="category">Cloud</span>
+                    <span class="details">Amazon Web Services (AWS)</span></li>
+                <li onclick="highlightTemporary(this)"><span class="category">Operating Systems</span>
+                    <span class="details">MacOS, Linux</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CERTIFICATIONS Section -->
+    <div class="container">
+        <div class="container-title">CERTIFICATIONS</div>
+        <div class="container-content">
+            <ul>
+                <li onclick="highlightTemporary(this)">
+                    <span class="category">Security</span>
+                    <span class="details">CompTIA Security+ (in-progress)</span>
+                </li>
+                <!-- <li onclick="highlightTemporary(this)">
+                    <span class="category">Networking</span>
+                    <span class="details">CompTIA Network+</span>
+                </li> -->
+                <li onclick="highlightTemporary(this)">
+                    <span class="category">Cloud</span>
+                    <div class="details-list">
+                        <span>AWS Solutions Architect Associate (in-progress)</span>
+                        <!-- <span>AWS Security Specialty</span> -->
+                      </div>
+                </li>
+    
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- EDUCATION Section -->
+    <div class="container">
+        <div class="container-title">EDUCATION</div>
+        <div class="container-content">
+            <ul>
+                <li onclick="highlightTemporary(this)">
+                    <span class="category">Master's</span>
+                    <span class="details">Computer and Information Technology</span>
+                  </li>
+                  <li onclick="highlightTemporary(this)">
+                    <span class="category">Bachelor's</span>
+                    <span class="details">Chemistry</span>
+                  </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+<!-- FOOTER Navigation Bar -->
+<footer>
+    <nav class="nav">
+        <a class="nav-link" href="/contact.html">CONTACT</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/ivpaul/">LINKEDIN</a>
+        <a class="nav-link" href="https://www.github.com/ivpaul">GITHUB</a>
+    </nav>
+</footer>
+
+<!-- Javascript -->
+<!-- <script src="./js/scripts.js"></script> -->
+
+<script>
+    function highlightTemporary(element) {
+      element.classList.add('tapped');
+      setTimeout(() => {
+        element.classList.remove('tapped');
+      }, 200); 
+    }
+  </script>
+
+</html>
