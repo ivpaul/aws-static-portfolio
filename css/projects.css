@@ -54,4 +54,6 @@
 .project-item .technologies {
   font-size: 0.9rem;
   color: #a0aec0;
+  text-indent: -14ch;
+  padding-left: 16ch;
 }
