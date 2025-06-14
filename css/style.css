@@ -31,7 +31,7 @@ body {
   padding: 0px;
   box-sizing: border-box;
   background-color: inherit;
-  border-bottom: 1.5px solid rgba(220, 250, 250, 0.623);
+  /* border-bottom: 1.5px solid rgba(220, 250, 250, 0.623); */
 }
 
 .bio-section {

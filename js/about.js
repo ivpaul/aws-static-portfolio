@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   const aboutHTML = `
-   <!-- CURRENT Section -->
-<div class="container">
-  <div class="container-title">CURRENT</div>
-  <div class="container-content">
-    <ul>
-      <li>
-        <span class="category">Full-Time</span>
-        <span class="details">Systems Architect @ DoD (TS/SCI + Full Scope Polygraph Clearance)</span>
-      </li>
-    </ul>
-  </div>
-</div>
+    <!-- CURRENT Section -->
+    <div class="container">
+    <div class="container-title">CURRENT</div>
+    <div class="container-content">
+        <ul>
+        <li>
+            <span class="category">Full-Time</span>
+            <span class="details">Systems Architect @ DoD (TS/SCI + Full Scope Polygraph Clearance)</span>
+        </li>
+        </ul>
+    </div>
+    </div>
+
     <!-- SKILLS Section -->
     <div class="container">
         <div class="container-title">SKILLS</div>
@@ -54,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     </div>
 
-
     <!-- EDUCATION Section -->
     <div class="container">
         <div class="container-title">EDUCATION</div>
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </ul>
         </div>
     </div>
-
+    
   `;
-  document.getElementById("about-container").innerHTML = aboutHTML;
+  document.getElementById("about").innerHTML = aboutHTML;
 });

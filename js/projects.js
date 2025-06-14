@@ -41,5 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   `;
 
-  document.getElementById("projects-container").innerHTML = projectsHTML;
+  document.getElementById("projects").innerHTML = projectsHTML;
 });
