@@ -1,39 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/images/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/about.css">
-</head>
-
-<!-- HEADER Bar -->
-<header>
-    <nav class="nav">
-        <a class="nav-logo" href="/">
-            <span>I</span><span>V</span><span>A</span><span>N</span> <span>P</span><span>A</span><span>U</span><span>L</span>
-          </a>
-        <div class="nav-links">
-            <a class="nav-active-link" href="/about.html">ABOUT</a>
-            <a class="nav-link" href="/projects.html">PROJECTS</a>
-            <a class="nav-link" href="/blog.html">BLOG</a>
-        </div>
-    </nav>
-</header>
-
-<body>
-    <!-- CURRENT Section -->
-    <div class="container">
-        <div class="container-title">CURRENT</div>
-        <div class="container-content">
-            <p onclick="highlightTemporary(this)">Systems Architect @ DoD (TS/SCI + Poly)</p>
-        </div>
-    </div>
-
+document.addEventListener("DOMContentLoaded", function () {
+  const aboutHTML = `
+   <!-- CURRENT Section -->
+<div class="container">
+  <div class="container-title">CURRENT</div>
+  <div class="container-content">
+    <ul>
+      <li>
+        <span class="category">Full-Time</span>
+        <span class="details">Systems Architect @ DoD (TS/SCI + Full Scope Polygraph Clearance)</span>
+      </li>
+    </ul>
+  </div>
+</div>
     <!-- SKILLS Section -->
     <div class="container">
         <div class="container-title">SKILLS</div>
@@ -46,7 +24,7 @@
                 <li onclick="highlightTemporary(this)"><span class="category">Cloud</span>
                     <span class="details">Amazon Web Services (AWS)</span></li>
                 <li onclick="highlightTemporary(this)"><span class="category">Operating Systems</span>
-                    <span class="details">MacOS, Linux</span></li>
+                    <span class="details">Linux, Windows</span></li>
             </ul>
         </div>
     </div>
@@ -94,27 +72,6 @@
         </div>
     </div>
 
-</body>
-
-<!-- FOOTER Navigation Bar -->
-<footer>
-    <nav class="nav">
-        <a class="nav-link" href="/contact.html">CONTACT</a>
-        <a class="nav-link" href="https://www.linkedin.com/in/ivpaul/">LINKEDIN</a>
-        <a class="nav-link" href="https://www.github.com/ivpaul">GITHUB</a>
-    </nav>
-</footer>
-
-<!-- Javascript -->
-<!-- <script src="./js/scripts.js"></script> -->
-
-<script>
-    function highlightTemporary(element) {
-      element.classList.add('tapped');
-      setTimeout(() => {
-        element.classList.remove('tapped');
-      }, 200); 
-    }
-  </script>
-
-</html>
+  `;
+  document.getElementById("about-container").innerHTML = aboutHTML;
+});

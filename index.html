@@ -8,31 +8,26 @@
     <title>Ivan Paul</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!-- HEADER Bar -->
 <header>
     <nav class="nav">
-        <a class="nav-logo" href="/">IVAN PAUL</a>
-        <div class="nav-links">
-            <a class="nav-link" href="/about.html">ABOUT</a>
-            <a class="nav-link" href="/projects.html">PROJECTS</a>
-            <a class="nav-link" href="/blog.html">BLOG</a>
-        </div>
+        <a class="nav-logo" href="/">Hi - I'm Ivan!</a>
     </nav>
 </header>
 
 <body>
     <!-- About Section -->
-    <main class="bio-container">
+    <main id= "bio-container" class="bio-container">
         <section class="bio-section">
             <div class="bio-image">
-                <img src="/images/prof.PNG" alt="Ivan Paul" class="profile-photo">
+                <img src="/images/ip_gray.JPEG" alt="Ivan Paul" class="profile-photo">
             </div>
             <div class="bio-content">
-                <p>
-                    Hi -— I'm Ivan!
-                </p>
                 <p>
                     I am a cybersecurity professional with 4 years of technical experience and 3 years of scripting/programming experience.
                 </p>
@@ -61,18 +56,17 @@
             </div>
         </section>
     </main>
+
+    <div id="about-container"></div>
+    <div id="projects-container"></div>
+
+<div class="fade-overlay"></div>
 </body>
 
 <!-- FOOTER Navigation Bar -->
-<footer>
-    <nav class="nav">
-        <a class="nav-link" href="/contact.html">CONTACT</a>
-        <a class="nav-link" href="https://www.linkedin.com/in/ivpaul/">LINKEDIN</a>
-        <a class="nav-link" href="https://www.github.com/ivpaul">GITHUB</a>
-    </nav>
-</footer>
-
 <!-- Javascript -->
-<!-- <script src="./js/scripts.js"></script> -->
-
+<script src="/js/navbar.js"></script>
+<script src="/js/about.js"></script>
+<script src="/js/projects.js"></script>
+<script src="/js/scripts.js"></script>
 </html>
