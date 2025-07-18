@@ -5,10 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
       <h2 class="title">PROJECTS</h2>
       <div class="project-list">
 
+        <a href="https://github.com/ivpaul/home-library" class="project-link">
+          <div class="project-item">
+            <h2>→ Digitized Home Library</h2>
+            <p>Building this project to gain more exposure to AWS services -- specifically the Command-Line-Interface (CLI), Cognito, API Gateway, and Virtual
+            Private Cloud (VPC) -- and continue practicing cloud development best practices. This library app is incomplete; my next steps are to incorporate 
+            terraform to handle infrastructure and automation to upload all of my books to the app.</p>
+            <p class="technologies">Technologies: Cognito, IAM, S3, Lambda, API Gateway, DynamoDB, VPC</p>
+          </div>
+        </a>
+
         <a href="https://github.com/ivpaul/aws-static-portfolio" class="project-link">
           <div class="project-item">
             <h2>→ Severless Static Website</h2>
-            <p>Building and maintaining my portfolio (ivanpaul.dev) in AWS to learn cloud computing best practices.</p>
+            <p>Building and maintaining my portfolio (ivanpaul.dev) in AWS to learn cloud development best practices.</p>
             <p class="technologies">Technologies: IAM, S3, DynamoDB, Lambda, Route53, CloudFront, SES</p>
           </div>
         </a>
@@ -17,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="project-item">
             <h2>→ Hospify</h2>
             <p>Final project for my database management class. I learned concepts related to database optimization, querying, and full-stack development.</p>
-            <p class="technologies">Technologies: HTML, CSS, React.js, Node.js, SQL, AWS RDS</p>
+            <p class="technologies">Technologies: React.js, Node.js, SQL, AWS RDS</p>
           </div>
         </a>
 
