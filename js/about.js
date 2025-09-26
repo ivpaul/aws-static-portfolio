@@ -46,9 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li onclick="highlightTemporary(this)">
                     <span class="category">Cloud</span>
                     <div class="details-list">
-                        <span>AWS Solutions Architect Associate (in-progress)</span>
+                        <span>AWS Solutions Architect Associate</span>
                         <!-- <span>AWS Security Specialty</span> -->
                       </div>
+                </li>
+                <li onclick="highlightTemporary(this)">
+                    <span class="category">DevOps</span>
+                    <span class="details">HashiCorp Terraform Associate</span>
                 </li>
     
             </ul>
