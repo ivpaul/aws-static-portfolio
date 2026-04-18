@@ -4,7 +4,6 @@ const floatingNavMarkup = `
     <a href="/#about" class="fa fa-user" title="About" id="link-about"></a>
     <a href="/#projects" class="fa fa-code" title="Projects" id="link-projects"></a>
     <span class="divider">|</span>
-    <a href="/contact.html" class="fa fa-envelope" title="Contact"></a>
     <a href="https://www.github.com/ivpaul" class="fa fa-github" title="GitHub"></a>
     <a href="https://www.linkedin.com/in/ivpaul" class="fa fa-linkedin" title="LinkedIn"></a>
   </div>

@@ -63,7 +63,7 @@ const aboutMarkup = `
       <ul>
         <li data-highlightable="true">
           <span class="category">Master's</span>
-          <span class="details">Computer and Information Technology</span>
+          <span class="details">Computer Science</span>
         </li>
         <li data-highlightable="true">
           <span class="category">Bachelor's</span>

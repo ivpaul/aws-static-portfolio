@@ -11,7 +11,6 @@ export default defineConfig({
       input: {
         index: resolve(rootDirectory, "index.html"),
         blog: resolve(rootDirectory, "blog.html"),
-        contact: resolve(rootDirectory, "contact.html"),
         blogTemplate: resolve(rootDirectory, "blogs/template.html"),
         cloudResumeChallenge: resolve(rootDirectory, "blogs/CloudResumeChallenge.html"),
       },
